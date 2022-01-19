@@ -25,7 +25,7 @@ def request_detail():
 ##webapp
 @app.route("/home")
 def home():
-    return render_template("home.html")
+    return render_template("home.html",name = 'Camp')
 
 if __name__ == "__main__":
     app.run()# host ='0.0.0.0',port=5001 
