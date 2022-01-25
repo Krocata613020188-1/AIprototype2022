@@ -46,35 +46,20 @@
               </div>
               <div class="text-center col-12">
                 <!-- CONTACT FORM https://github.com/jonmbake/bootstrap3-contact-form -->
-                <form id="feedbackForm" class="text-center">
+                <form action="{{url_for('insert')}}"method="post">
                   <div class="form-group">
-                    <label for="name">Name</label>
-                    <input type="text" class="form-control" id="name" name="name" placeholder="Name" aria-describedby="nameHelp">
-                    <span id="nameHelp" class="form-text text-muted" style="display: none;">Please enter your name.</span>
-                  </div>
+                    <label for="car_id">ทะเบียนรถ</label>
+                    <input type="text" class="form-control"  name="car_id" placeholder="car_id" aria-describedby="nameHelp">
+                    </div>
                   <div class="form-group">
-                    <label for="name">ทะเบียนรถ</label>
-                    <input type="text" class="form-control" id="key" name="ทะเบียนรถ" placeholder="ทะเบียนรถ" aria-describedby="nameHelp">
-                    <span id="nameHelp" class="form-text text-muted" style="display: none;">กรุณากรอกทะเบียนรถ</span>
-                  </div>
+                    <label for="Sname">Name</label>
+                    <input type="text" class="form-control"  name="Sname" placeholder="Name" aria-describedby="nameHelp">
+                    </div>
                   <div class="form-group">
-                    <label for="email">E-Mail</label>
-                    <input type="email" class="form-control" id="email" name="email" placeholder="Email Address" aria-describedby="emailHelp">
-                    <span id="emailHelp" class="form-text text-muted" style="display: none;">Please enter a valid e-mail address.</span>
-                  </div>
-                  <div class="form-group">
-                    <label for="name">กรมธรรม์</label>
-                    <input type="text" class="form-control" id="broker" name="broker" placeholder="กรมธรรม์" aria-describedby="emailHelp">
-                    <span id="emailHelp" class="form-text text-muted" style="display: none;">กรุณากรอกกรมธรรม์</span>
-                  </div>
-                  <div class="form-group">
-                    <label for="file">เพิ่มไฟล์</label>
-                    <form action="" method="post">
-                      <input type="file" name="3Dfile">
-                      <button type="sumbit">Upload</button>
-                    </form>
-                  </div>
-                  <button type="submit" id="feedbackSubmit" class="btn btn-primary btn-lg"> ยืนยัน</button>
+                    <label for="insurance">กรมธรรม์</label>
+                    <input type="text" class="form-control"  name="insurance" placeholder="กรมธรรม์" aria-describedby="emailHelp">
+                  <p></p>
+                  <button type="submit" class="pull-right btn btn-primary"> ยืนยัน</button>
                 </form>
               </div>
             </div>
@@ -82,20 +67,7 @@
         </div>
       </div>
     </div>
-    <header>
-      <div class="jumbotron">
-        <div class="container">
-          <div class="row">
-            <div class="col-12">
-              <h1 class="text-center">Database For Admin</h1>
-              <p class="text-center">"ฐานข้อมูลสำหรับนำไปใช้ในการประเมิน"</p>
-              <p>&nbsp;</p>
-              <p class="text-center"><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a> </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
+
     
     <footer class="text-center">
       <div class="container">
